@@ -1,0 +1,50 @@
+/*Comienzo Inicio*/
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+/*Fin del inicio*/
+/*Comienzo catalogo*/
+*{
+
+    font-family: ;
+}
+
+.contenedor{
+max-width: 600px;
+width: 100%;
+margin: 40px auto;
+display: flex;
+}
+.mostrador{
+width: 100%;
+
+}
+.mostrador .fila{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.mostrador  .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+
+   ;
+}
+.mostrador .item:hover{
+    background-color: #e6e6e6;
+}
+.mostrador .fila .item .img{
+    width: 50%;
+    margin: 30px;
+}
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #5596f8;
+}
