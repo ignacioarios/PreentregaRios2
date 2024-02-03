@@ -1,0 +1,32 @@
+main{
+
+.card {
+    border-style: none;
+    align-items: center;
+}
+
+.entregaimg {
+    display: flex;
+    max-width: 320px !important;
+}
+
+.cajaentrega {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width:900px) {
+    .cajaentrega {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card .entregaimg {
+        max-width: 550px;
+    }
+}
+}

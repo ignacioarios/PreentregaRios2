@@ -43,7 +43,6 @@
     text-decoration: underline
 }
 
-
 /*catalogo de entregas*/
 h1 {
     text-align: center;
@@ -156,3 +155,26 @@ h3 {
     justify-content: center;
     font-style: italic;
 }
+
+/*Formulario cotizacion*/
+
+fieldset {
+
+    border: 5px solid #043f88;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 150px;
+}
+
+fieldset legend {
+    background: #1F497D;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 32px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #ddd;
+    margin-left: 20px;
+}
+
+/*fin formulario*/

@@ -1,0 +1,8 @@
+header {
+    border: 1px solid nth($color-footer,1);
+    .nav-item {
+        &:hover {
+            background-color:($color-nav);
+        }
+    }
+    }
