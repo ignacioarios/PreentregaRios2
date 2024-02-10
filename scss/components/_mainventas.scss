@@ -7,7 +7,7 @@ main{
 
 .entregaimg {
     display: flex;
-    max-width: 320px !important;
+    width: 320px;
 }
 
 .cajaentrega {
@@ -19,7 +19,7 @@ main{
     margin-bottom: 50px;
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width: nth($tamanio,3)) {
     .cajaentrega {
         display: flex;
         flex-direction: column;
