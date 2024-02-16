@@ -1,8 +1,9 @@
 main{
 
 .card {
-    border-style: none;
+    @extend %bordercompleto;
     align-items: center;
+    margin: inherit;
 }
 
 .entregaimg {
@@ -13,10 +14,11 @@ main{
 .cajaentrega {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    margin: 10px
 }
 
 @media only screen and (min-width: nth($tamanio,3)) {

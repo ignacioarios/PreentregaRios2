@@ -1,39 +1,67 @@
 main {
+    .titulo {
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 5%;
+        text-decoration-line: underline;
+    }
 
     h3 {
         font-style: italic;
     }
 
-    div {
-        .carrousel {
-            margin: 5%;
+    .caja-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+        .financiacion {
+            @extend %cajaconborder;
+            background-color: nth($color-caja-desktop, 1);
         }
-
-        .carousel-inner {
-            margin-top: 10px;
-            margin-bottom: 10px;
+        .logoindex {
+            max-width: 60px;
         }
-
-        div.caja-vende {
-            @extend %bordercompleto;
-            background-color: nth($color-caja-mobile, 1);
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-
-
-
-            @media only screen and (min-width: nth($tamanio, 3)) {
-                .caja-vende {
-                    margin-right: 200px;
-                    margin-left: 200px;
-                    background-color: nth($color-caja-desktop, 1);
-                }
-
+        @media only screen and (max-width: 980px) {
+            main.caja-logos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                flex-direction: row;
+                align-content: space-around;
+                align-items: stretch;
             }
+
+        }
+    }
+    .caja-catalog{
+        @extend %cajaconborder;
+        @extend %caract-index
+    }
+    .carrousel {
+        margin: 5%;
+    }
+
+    .carousel-inner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caja-vende {
+        @extend %cajaconborder;
+        @extend %caract-index;
+
+
+
+        @media only screen and (min-width: nth($tamanio, 3)) {
+            .caja-vende {
+                margin-right: 200px;
+                margin-left: 200px;
+                background-color: nth($color-caja-desktop, 1);
+            }
+
         }
     }
 }

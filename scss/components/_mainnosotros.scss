@@ -1,6 +1,11 @@
 main{
+    margin: 3%;
+    border-style: solid ;
+    .nosotros{
+        @extend %cajaconborder;
+    }
     .titulopagano{
-        font-style:italic ;
+       @extend %titulo
     }
     iframe {
         max-width: 80%;

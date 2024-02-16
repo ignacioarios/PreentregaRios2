@@ -1,14 +1,16 @@
 main {
     .formulario {
-     text-align: center;
-        width: 80%;
+        text-align: center;
+        width: 60%;
         max-width: 400px;
         background-color: nth($color-nav, 1);
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px nth($color-footer, 1);
-        margin-right: 25%;
-        margin-left: 25% ;
+        margin-right: 20%;
+        margin-left: 20%;
+        display: flex;
+        flex-wrap: nowrap;
 
         .form-contenedor__div {
             margin-bottom: 15px;
@@ -33,8 +35,9 @@ main {
                 margin-top: 5px;
             }
         }
+
         input[type="submit"] {
-            background-color:  nth($color-desktop,1);
+            background-color: nth($color-caja-desktop, 1);
             color: rgb(255, 255, 255);
             border: none;
             padding: 10px;

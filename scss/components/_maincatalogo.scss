@@ -3,8 +3,11 @@ main {
         max-width: 300px;
     }
 
+    .titulo {
+        @extend %titulo
+    }
+
     .contenedor {
-        @extend %bordercompleto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,14 +21,17 @@ main {
     .item {
         max-width: 320px;
         text-align: center;
+        margin: inherit;
+        @extend %bordercompleto;
 
-        .descripcion {
-            color: (nth($color-desktop, 1));
-            font-weight: bold;
-        }
+    }
 
-        .precio {
-            color: nth($color-caja-mobile, 1);
-        }
+    .descripcion {
+        color: (nth($color-desktop, 1));
+        font-weight: bold;
+    }
+
+    .precio {
+        color: nth($color-footer, 1);
     }
 }
