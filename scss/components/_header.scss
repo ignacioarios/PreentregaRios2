@@ -5,4 +5,7 @@ header {
             background-color:($color-nav);
         }
     }
+    .container-fluid{
+        background-color: nth($color-footer,1);
+    }
     }

@@ -20,8 +20,10 @@ main{
     margin-bottom: 50px;
     margin: 10px
 }
-
-@media only screen and (min-width: nth($tamanio,3)) {
+@media screen {
+    
+}
+@media only screen and (min-width: nth($tamanio,3)){
     .cajaentrega {
         display: flex;
         flex-direction: column;
