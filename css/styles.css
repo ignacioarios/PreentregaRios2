@@ -1,6 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 2;
+  margin: 2px;
   text-align: center;
   justify-content: center;
 }
@@ -11,7 +11,7 @@ main .card, main .item {
   border-style: solid;
 }
 
-main .nosotros, main .caja-vende, main .caja-catalog, main .caja-logos .financiacion {
+main .nosotros, main .caja-vende, main .caja-catalog, main .financiacion {
   background-color: rgb(80, 80, 80);
   color: black;
   padding: 10px 10px;
@@ -20,7 +20,7 @@ main .nosotros, main .caja-vende, main .caja-catalog, main .caja-logos .financia
   font-size: 1rem;
   transition: 0.5s;
 }
-main .nosotros:hover, main .caja-vende:hover, main .caja-catalog:hover, main .caja-logos .financiacion:hover {
+main .nosotros:hover, main .caja-vende:hover, main .caja-catalog:hover, main .financiacion:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
   transform: scale(1.1);
 }
@@ -40,6 +40,36 @@ main .caja-vende, main .caja-catalog {
   background-color: rgba(56, 74, 126, 0.692);
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1500px) {
+  main div .contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+  main div.caja-logos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+  }
+  main div.cajaentrega {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  main div.card .entregaimg {
+    max-width: 300px;
+  }
+}
 main .titulo {
   font-style: italic;
   font-weight: bold;
@@ -57,21 +87,11 @@ main .caja-logos {
   align-content: center;
   align-items: stretch;
 }
-main .caja-logos .financiacion {
+main .financiacion {
   background-color: rgba(56, 74, 126, 0.692);
 }
-main .caja-logos .logoindex {
+main .logoindex {
   max-width: 60px;
-}
-@media only screen and (max-width: 980px) {
-  main .caja-logos main.caja-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    align-content: space-around;
-    align-items: stretch;
-  }
 }
 main .carrousel {
   margin: 5%;
@@ -80,16 +100,8 @@ main .carousel-inner {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-@media only screen and (min-width: 900px) {
-  main .caja-vende .caja-vende {
-    margin-right: 200px;
-    margin-left: 200px;
-    background-color: rgba(56, 74, 126, 0.692);
-  }
-}
-
 main .img-auto {
-  max-width: 300px;
+  max-width: 285px;
 }
 main .contenedor {
   display: flex;
@@ -115,46 +127,43 @@ main .precio {
 }
 
 main .formulario {
-  text-align: center;
-  width: 60%;
-  max-width: 400px;
-  background-color: rgb(80, 80, 80);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  margin-right: 20%;
-  margin-left: 20%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: auto;
+  padding: 25px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  background-color: rgb(80, 80, 80);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-main .formulario .form-contenedor__div {
-  margin-bottom: 15px;
+main .enviar {
+  background-color: rgb(0, 0, 0);
+  color: #250dff;
 }
-main .formulario .form-contenedor__div label {
+main .eleccion {
+  background-color: rgba(56, 74, 126, 0.692);
+}
+main label {
   display: block;
   margin-bottom: 5px;
   color: rgb(255, 255, 255);
 }
-main .formulario .form-contenedor__div input,
-main .formulario .form-contenedor__div select {
+main input,
+main select {
   width: 100%;
-  padding: 8px;
+  padding: 15px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
 }
-main .formulario .form-contenedor__div select {
-  margin-top: 5px;
+main input .formulario,
+main select .formulario {
+  margin-bottom: 15px;
 }
-main .formulario input[type=submit] {
-  background-color: rgba(56, 74, 126, 0.692);
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  width: 70%;
-  border-radius: 7px;
+main input select,
+main select select {
+  margin-top: 5px;
 }
 
 main .card {
@@ -163,7 +172,7 @@ main .card {
 }
 main .entregaimg {
   display: flex;
-  width: 320px;
+  width: 250px;
 }
 main .cajaentrega {
   display: flex;
@@ -173,15 +182,6 @@ main .cajaentrega {
   align-items: center;
   margin-bottom: 50px;
   margin: 10px;
-}
-@media only screen and (min-width: 900px) {
-  main .cajaentrega {
-    display: flex;
-    flex-direction: column;
-  }
-  main .card .entregaimg {
-    max-width: 550px;
-  }
 }
 
 main {

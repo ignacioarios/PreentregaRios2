@@ -17,29 +17,23 @@ main {
         flex-direction: column;
         align-content: center;
         align-items: stretch;
-        .financiacion {
-            @extend %cajaconborder;
-            background-color: nth($color-caja-desktop, 1);
-        }
-        .logoindex {
-            max-width: 60px;
-        }
-        @media only screen and (max-width: 980px) {
-            main.caja-logos {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                flex-direction: row;
-                align-content: space-around;
-                align-items: stretch;
-            }
-
-        }
     }
-    .caja-catalog{
+
+
+    .financiacion {
+        @extend %cajaconborder;
+        background-color: nth($color-caja-desktop, 1);
+    }
+
+    .logoindex {
+        max-width: 60px;
+    }
+
+    .caja-catalog {
         @extend %cajaconborder;
         @extend %caract-index
     }
+
     .carrousel {
         margin: 5%;
     }
@@ -52,16 +46,5 @@ main {
     .caja-vende {
         @extend %cajaconborder;
         @extend %caract-index;
-
-
-
-        @media only screen and (min-width: nth($tamanio, 3)) {
-            .caja-vende {
-                margin-right: 200px;
-                margin-left: 200px;
-                background-color: nth($color-caja-desktop, 1);
-            }
-
-        }
     }
 }
