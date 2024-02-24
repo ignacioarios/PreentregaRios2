@@ -1,11 +1,11 @@
 header {
-    border: 1px solid nth($color-footer,1);
     .nav-item {
         &:hover {
-            background-color:($color-nav);
+            background-color: ($color-nav);
         }
     }
-    .container-fluid{
-        background-color: nth($color-footer,1);
+
+    .container-fluid {
+        background-color: nth($color-footer, 1);
     }
-    }
+}

@@ -10,14 +10,7 @@ main {
         font-style: italic;
     }
 
-    .caja-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-direction: column;
-        align-content: center;
-        align-items: stretch;
-    }
+   
 
 
     .financiacion {
@@ -47,4 +40,12 @@ main {
         @extend %cajaconborder;
         @extend %caract-index;
     }
+}
+main div.caja-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: stretch;
 }

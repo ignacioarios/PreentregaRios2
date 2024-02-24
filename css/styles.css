@@ -2,6 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 2px;
   text-align: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -40,8 +41,20 @@ main .caja-vende, main .caja-catalog {
   background-color: rgba(56, 74, 126, 0.692);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+  main div.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (min-width: 700px) and (max-width: 1500px) {
-  main div .contenedor {
+  main div.contenedor {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -79,14 +92,6 @@ main .titulo {
 main h3 {
   font-style: italic;
 }
-main .caja-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
-  align-content: center;
-  align-items: stretch;
-}
 main .financiacion {
   background-color: rgba(56, 74, 126, 0.692);
 }
@@ -100,18 +105,17 @@ main .carousel-inner {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-main .img-auto {
-  max-width: 285px;
-}
-main .contenedor {
+main div.caja-logos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-  align-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-content: center;
+  align-items: stretch;
+}
+
+main .img-auto {
+  max-width: 260px;
 }
 main .item {
   max-width: 320px;
@@ -205,9 +209,6 @@ footer .t-footer {
   text-decoration: underline;
 }
 
-header {
-  border: 1px solid rgb(0, 0, 0);
-}
 header .nav-item:hover {
   background-color: rgb(80, 80, 80);
 }
