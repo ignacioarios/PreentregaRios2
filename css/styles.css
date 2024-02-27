@@ -114,6 +114,16 @@ main div.caja-logos {
   align-items: stretch;
 }
 
+main div.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
 main .img-auto {
   max-width: 260px;
 }
@@ -131,6 +141,7 @@ main .precio {
 }
 
 main .formulario {
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -179,10 +190,8 @@ main .cajaentrega {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
-  margin: 10px;
 }
 
 main {

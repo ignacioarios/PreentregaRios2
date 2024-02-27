@@ -1,5 +1,14 @@
 main {
 
+     div.contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        align-content: space-around;
+        flex-wrap: wrap;}
     .img-auto{
         max-width: 260px;
     }
