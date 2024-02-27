@@ -10,9 +10,6 @@ main {
         font-style: italic;
     }
 
-   
-
-
     .financiacion {
         @extend %cajaconborder;
         background-color: nth($color-caja-desktop, 1);
@@ -41,6 +38,7 @@ main {
         @extend %caract-index;
     }
 }
+
 main div.caja-logos {
     display: flex;
     flex-wrap: wrap;

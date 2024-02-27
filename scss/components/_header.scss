@@ -8,4 +8,14 @@ header {
     .container-fluid {
         background-color: nth($color-footer, 1);
     }
+    .colorboton{
+        background-color: ($color-desktop);
+        border-color: $color-footer;
+        color: $color-letra-foot;
+    }
+    .navbar-collapse{
+        display: flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
 }

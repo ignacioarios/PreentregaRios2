@@ -152,8 +152,7 @@ main label {
   margin-bottom: 5px;
   color: rgb(255, 255, 255);
 }
-main input,
-main select {
+main input, main select {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -161,12 +160,10 @@ main select {
   border: none;
   border-radius: 5px;
 }
-main input .formulario,
-main select .formulario {
+main input .formulario, main select .formulario {
   margin-bottom: 15px;
 }
-main input select,
-main select select {
+main input select, main select select {
   margin-top: 5px;
 }
 
@@ -208,12 +205,28 @@ footer .footer {
 footer .t-footer {
   text-decoration: underline;
 }
+footer .logoredes {
+  max-width: 145px;
+}
+footer .logorede {
+  max-width: 135px;
+}
 
 header .nav-item:hover {
   background-color: rgb(80, 80, 80);
 }
 header .container-fluid {
   background-color: rgb(0, 0, 0);
+}
+header .colorboton {
+  background-color: #250dff;
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+header .navbar-collapse {
+  display: flex;
+  flex-basis: auto;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
