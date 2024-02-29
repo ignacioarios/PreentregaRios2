@@ -45,15 +45,16 @@
   <main>
     <!-- Formulario de cotizacion -->
     <h1 class="titulo">Te compramos tu vehiculo</h1>
-    <form class="formulario" action="/post">
+    <form class="formulario"  action="https://formspree.io/f/mpzvrkob"
+    method="POST">
       <fieldset>
         <div>
           <label for="name">Nombre</label>
-          <input name="Nombre" type="text">
+          <input name="Nombre" type="text" name="name">
         </div>
         <div>
           <label for="telefono">Telefono</label>
-          <input id="Telefono" type="text">
+          <input name="message" id="Telefono" type="text">
         </div>
         <div>
           <label for="email">E-mail</label>
@@ -61,7 +62,7 @@
         </div>
         <div>
           <label for="vehiculo">Tipo de vehiculo</label>
-          <select class="eleccion" name="tipovehiculo" id="">
+          <select name="message" class="eleccion" name="tipovehiculo" id="">
             <option value="Moto">Auto</option>
             <option value="Auto">Moto</option>
             <option value="Camioneta">Camioneta</option>
@@ -69,20 +70,20 @@
         </div>
         <div>
           <label>Modelo</label>
-          <input id="Modelo" type="text">
+          <input name="message" id="Modelo" type="text">
         </div>
         <div>
           <label for="km">Kilometraje</label>
-          <input id="Kilometraje" type="text">
+          <input name="message" id="Kilometraje" type="text">
         </div>
         <div>
-          <select class="eleccion" name="venta/permuta" id="">
+          <select name="message" class="eleccion" name="venta/permuta" id="">
             <option value="Venta">Venta</option>
             <option value="Permuta">Permuta</option>
           </select>
         </div>
         <div>
-          <textarea name="Comentarios" id="" placeholder=" Indique detalles a tener en cuenta"></textarea>
+          <textarea name="message" name="Comentarios" id="" placeholder=" Indique detalles a tener en cuenta"></textarea>
         </div>
         <input type="file" name="" id="">
       </fieldset>
